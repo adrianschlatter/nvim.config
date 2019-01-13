@@ -16,7 +16,18 @@ Plugin 'itchyny/lightline.vim'
 				" window is open
 
 Plugin 'w0rp/ale'
-				
+
+" Auto-indentation for Python
+Plugin 'vim-scripts/indentpython.vim'
+
+" Auto-Complete code
+" Plugin 'Valloric/YouCompleteMe'
+
+" File tree
+Plugin 'scrooloose/nerdtree'
+
+" Git integration
+Plugin 'tpope/vim-fugitive'
 
 " Configure your Plugins here
 

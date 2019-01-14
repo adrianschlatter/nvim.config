@@ -11,4 +11,7 @@ filetype plugin on
 
 " show line numbers:
 :set number
-:set columns=85		" needed to have 80 columns + line numbers
+" needed to have 80 columns + line number:
+:set columns=85		
+" allow backspace to delete beyond auto-indent, eol, and start of insertion:
+:set backspace=indent,eol,start	

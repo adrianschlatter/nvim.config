@@ -15,21 +15,16 @@ set encoding=utf-8
 let python_highlight_all=1
 syntax on
 
-" Python with virtualenv support
-py << EOF
-import os
-import sys
-if 'VIRTUAL_ENV' in os.environ:
-  project_base_dir = os.environ['VIRTUAL_ENV']
-  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-  execfile(activate_this, dict(__file__=activate_this))
-EOF
-
 " Let NERDTree ignore some files
 let NERDTreeIgnore=['\.pyc$', '\~$']
 
 " Map F5 to run python script
-nnoremap <F5> <Esc>:w<CR>:!clear;python %<CR>
+nnoremap <F5> :call <SID>run()<CR>
+
+function! s:run()
+	exec 'w'
+	exec 'AsyncRun! time python %'
+endfunction
 
 " Ensure proper indentation
 set tabstop=4

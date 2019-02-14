@@ -15,13 +15,20 @@ Plugin 'itchyny/lightline.vim'
 				" lightline statusbar when only 1 
 				" window is open
 
+" Syntax checker
 Plugin 'w0rp/ale'
 
 " Auto-indentation for Python
 Plugin 'vim-scripts/indentpython.vim'
 
 " Auto-Complete code
-" Plugin 'Valloric/YouCompleteMe'
+Plugin 'maralla/completor.vim'
+
+" Python virtualenv management
+Plugin 'cjrh/vim-conda'
+
+" Run commands asynchronously
+Plugin 'skywind3000/asyncrun.vim'
 
 " File tree
 Plugin 'scrooloose/nerdtree'

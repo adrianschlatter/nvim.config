@@ -15,3 +15,5 @@ filetype plugin on
 :set columns=85		
 " allow backspace to delete beyond auto-indent, eol, and start of insertion:
 :set backspace=indent,eol,start	
+" do not replace tabs by spaces
+:set noexpandtab

@@ -12,7 +12,7 @@ filetype plugin on
 " show line numbers:
 :set number
 " needed to have 80 columns + line number:
-:set columns=85		
+":set columns=85		
 " allow backspace to delete beyond auto-indent, eol, and start of insertion:
 :set backspace=indent,eol,start	
 " do not replace tabs by spaces

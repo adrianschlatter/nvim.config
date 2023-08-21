@@ -19,22 +19,28 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'w0rp/ale'
 
 " Auto-indentation for Python
-Plugin 'vim-scripts/indentpython.vim'
+" Plugin 'vim-scripts/indentpython.vim'
 
 " Auto-Complete code
-Plugin 'maralla/completor.vim'
+" Plugin 'maralla/completor.vim'
 
 " Python virtualenv management
-Plugin 'cjrh/vim-conda'
+" Plugin 'cjrh/vim-conda'
+" Plugin 'ubaldot/vim-conda-activate'
 
 " Run commands asynchronously
-Plugin 'skywind3000/asyncrun.vim'
+" Plugin 'skywind3000/asyncrun.vim'
 
 " File tree
-Plugin 'scrooloose/nerdtree'
+" Plugin 'scrooloose/nerdtree'
 
 " Git integration
-Plugin 'tpope/vim-fugitive'
+" Plugin 'tpope/vim-fugitive'
+
+" Python coverage
+" Plugin 'kalekseev/vim-coverage.py'
+" Plugin 'roxma/nvim-yarp'
+" Plugin 'roxma/vim-hug-neovim-rpc'
 
 " Configure your Plugins here
 

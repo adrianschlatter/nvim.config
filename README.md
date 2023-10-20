@@ -1,19 +1,22 @@
-# My next neovim config
-
-I want:
+# My neovim config
 
 * catppuccin theme
-* treeview file browser
 * treesitter for live-parsing and highlighting
 * an LSP server for code completion
-* maybe telescope (fuzzy finder)
-* maybe harpoon (quicker navigation)
-* debugging (of python scripts)
+* telescope (fuzzy finder)
+* harpoon (quicker navigation)
+* debugging
 
-# Steps
+
+# Installation
 
 * Clone packer.nvim into
   ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+* clone this repo into ~/.config/nvim
+
+
+# History
+
 * Configure treesitter, LSP, telescope, harpoon according to
   (ThePrimeagen)[https://youtu.be/w7i4amO_zaE?si=jhcGhrhTTjaMr4XR]
 * Install nvim-dap (DAP client for nvim), nvim-dap-python (configures the

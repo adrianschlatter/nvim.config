@@ -1,4 +1,4 @@
 print('lua/custom/init.lua begin ===')
 require('custom.remap')
-vim.opt.colorcolumn = "79"
+require('custom.set')
 print('lua/custom/init.lua end =====')

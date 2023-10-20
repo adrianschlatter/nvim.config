@@ -1,5 +1,3 @@
-print 'set.lua'
-
 -- block cursor:
 vim.opt.guicursor = ""
 

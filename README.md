@@ -12,7 +12,11 @@
 
 * Clone packer.nvim into
   ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+* For copilot support, install node.js, first. Make sure its a new enough
+  version).
 * clone this repo into ~/.config/nvim
+
+When first starting nvim, run ```:Copilot setup```
 
 
 # History

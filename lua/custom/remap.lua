@@ -9,4 +9,3 @@ vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
 
 -- don't move cursor when joining lines:
 vim.keymap.set('n', 'J', 'mzJ`z')
-

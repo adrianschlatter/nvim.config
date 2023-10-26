@@ -52,6 +52,8 @@ return require('packer').startup(function(use)
 		'rcarriga/nvim-dap-ui',
 		requires = {'mfussenegger/nvim-dap'}
 	}
+    -- test runner:
+    use { 'vim-test/vim-test' }
     -- GitHub Copilot:
     use { 'github/copilot.vim' }
 end)

@@ -42,6 +42,9 @@ return require('packer').startup(function(use)
 			{'L3MON4D3/LuaSnip'},
 		}
 	}
+    -- commenting / uncommenting easily:
+    -- gcc comments out a line, gc comments out the target of a motion
+    use { 'tpope/vim-commentary' }
 	-- debugging:
 	use { 'mfussenegger/nvim-dap' }
 	use {

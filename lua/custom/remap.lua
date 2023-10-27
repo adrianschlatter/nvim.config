@@ -1,7 +1,17 @@
 -- emacs-like navigation in command-line:
+-- (<C-E> is already mapped to end of line)
 vim.keymap.set('c', '<C-A>', '<Home>')
 vim.keymap.set('c', '<C-F>', '<Right>')
 vim.keymap.set('c', '<C-B>', '<Left>')
+
+-- indenting and de-indenting in insert mode:
+-- <C-D> means de-indent
+-- <C-T> means indent; but this is my tmux prefix, so I remap it to <C-S>
+vim.keymap.set('i', '<C-S>', '<C-T>')
+
+-- indenting in visual mode (> and <) loses selection. I don't want that:
+vim.keymap.set('v', '<', '<gv')
+vim.keymap.set('v', '>', '>gv')
 
 -- move and indent highlighted text blocks:
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")

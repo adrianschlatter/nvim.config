@@ -59,4 +59,8 @@ return require('packer').startup(function(use)
     use { 'vim-test/vim-test' }
     -- GitHub Copilot:
     use { 'github/copilot.vim' }
+    use {
+          'nvim-lualine/lualine.nvim',
+          requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+        }
 end)

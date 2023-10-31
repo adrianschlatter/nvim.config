@@ -39,3 +39,7 @@ vim.opt.colorcolumn = '80'
 -- leader key is space:
 vim.g.mapleader = ' '
 
+-- enable spell checking:
+vim.opt.spelllang = 'en_us'
+vim.opt.spell = true
+

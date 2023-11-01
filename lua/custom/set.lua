@@ -33,6 +33,9 @@ vim.opt.scrolloff = 8
 -- always show sign-column:
 vim.opt.signcolumn = 'yes'
 
+-- set textwidth (used by gq):
+vim.opt.textwidth = 79
+
 -- highlight column 80:
 vim.opt.colorcolumn = '80'
 

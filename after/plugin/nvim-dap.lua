@@ -7,7 +7,7 @@ vim.keymap.set('n', '<leader>ds', vim.cmd.DapStepOver)
 vim.keymap.set('n', '<leader>di', vim.cmd.DapStepInto)
 vim.keymap.set('n', '<leader>do', vim.cmd.DapStepOut)
 vim.keymap.set('n', '<leader>dr', vim.cmd.DapToggleRepl)
-vim.keymap.set('n', '<leader>dt', vim.cmd.DapTerminate)
+vim.keymap.set('n', '<leader>dx', vim.cmd.DapTerminate)
 
 -- icons for gutter:
 -- first, define highlight groups:

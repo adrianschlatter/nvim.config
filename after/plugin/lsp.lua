@@ -5,3 +5,18 @@ lsp.on_attach(function(client, bufnr)
 	-- to learn the available actions
 	lsp.default_keymaps({buffer = bufnr})
 end)
+
+lsp.set_sign_icons({
+  error = '✘',
+  warn = '▲',
+  hint = '⚑',
+  info = '»'
+})
+
+require("mason").setup()
+require("mason-lspconfig").setup({
+    ensure_installed = {'pylsp', 'lua_ls'},
+    handlers = {
+        require('lsp-zero').default_setup,
+    },
+})

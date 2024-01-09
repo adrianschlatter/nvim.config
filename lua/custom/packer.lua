@@ -29,6 +29,7 @@ return require('packer').startup(function(use)
 	-- visualizes undo history (including branches):
 	use { 'mbbill/undotree' } 
 	use { 'tpope/vim-fugitive' }    -- git integration
+    -- support for language servers:
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v3.x',
@@ -45,6 +46,8 @@ return require('packer').startup(function(use)
 			{'L3MON4D3/LuaSnip'},
 		}
 	}
+    -- indicator for which lsp is attached to current buffer:
+    use { 'j-hui/fidget.nvim', tag = 'legacy' }
     -- commenting / uncommenting easily:
     -- gcc comments out a line, gc comments out the target of a motion
     use { 'tpope/vim-commentary' }

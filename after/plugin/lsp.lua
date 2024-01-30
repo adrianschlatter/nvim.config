@@ -4,6 +4,7 @@ lsp.on_attach(function(client, bufnr)
 	-- see :help lsp-zero-keybindings
 	-- to learn the available actions
 	lsp.default_keymaps({buffer = bufnr})
+    vim.keymap.set('n', '<leader>r', function() vim.lsp.buf.rename() end, opts)
 end)
 
 lsp.set_sign_icons({

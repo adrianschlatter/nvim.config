@@ -19,6 +19,7 @@ vim.opt.wrap = false
 vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undodir = os.getenv('HOME') .. '/.vim/undodir'
+vim.opt.undofile = true
 
 -- don't keep search highlighted but do incremental search:
 vim.opt.hlsearch = false
@@ -45,4 +46,3 @@ vim.g.mapleader = ' '
 -- enable spell checking:
 vim.opt.spelllang = 'en_us,de_ch'
 vim.opt.spell = true
-

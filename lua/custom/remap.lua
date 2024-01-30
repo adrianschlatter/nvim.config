@@ -19,3 +19,18 @@ vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
 
 -- don't move cursor when joining lines:
 vim.keymap.set('n', 'J', 'mzJ`z')
+
+-- keep cursor centered when searching:
+vim.keymap.set('n', 'n', 'nzzzv')
+vim.keymap.set('n', 'N', 'Nzzzv')
+
+-- keep cursor centered when half-page scrolling:
+vim.keymap.set('n', '<C-U>', '<C-U>zz')
+vim.keymap.set('n', '<C-D>', '<C-D>zz')
+
+-- don't lose selection when indenting:
+vim.keymap.set('v', '<', '<gv')
+
+-- quickfix window navigation:
+vim.keymap.set('n', '<C-n>', '<cmd>cnext<CR>zz')
+vim.keymap.set('n', '<C-p>', '<cmd>cprev<CR>zz')

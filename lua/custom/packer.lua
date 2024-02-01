@@ -25,9 +25,9 @@ return require('packer').startup(function(use)
 	use {   -- quick access for selected files
         'theprimeagen/harpoon',
         requires = { 'nvim-lua/plenary.nvim' }
-    } 
+    }
 	-- visualizes undo history (including branches):
-	use { 'mbbill/undotree' } 
+	use { 'mbbill/undotree' }
 	use { 'tpope/vim-fugitive' }    -- git integration
     -- support for language servers:
 	use {
@@ -74,4 +74,6 @@ return require('packer').startup(function(use)
         'andythigpen/nvim-coverage',
         requires = { 'nvim-lua/plenary.nvim' }
     }
+    -- iron.nvim repl:
+    use {'Vigemus/iron.nvim'}
 end)

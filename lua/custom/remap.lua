@@ -34,3 +34,6 @@ vim.keymap.set('v', '<', '<gv')
 -- quickfix window navigation:
 vim.keymap.set('n', '<C-n>', '<cmd>cnext<CR>zz')
 vim.keymap.set('n', '<C-p>', '<cmd>cprev<CR>zz')
+
+-- exit inert mode when in terminal mode:
+vim.keymap.set('t', '<C-[>', '<C-\\><C-n>')

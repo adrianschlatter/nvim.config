@@ -3,6 +3,7 @@
 vim.keymap.set('c', '<C-A>', '<Home>')
 vim.keymap.set('c', '<C-F>', '<Right>')
 vim.keymap.set('c', '<C-B>', '<Left>')
+vim.keymap.set('c', '<C-D>', '<Del>')
 
 -- indenting and de-indenting in insert mode:
 -- <C-D> means de-indent

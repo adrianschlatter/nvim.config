@@ -1,4 +1,5 @@
 local iron = require("iron.core")
+local view = require("iron.view")
 
 iron.setup {
     config = {
@@ -18,15 +19,14 @@ iron.setup {
         },
         -- How the repl window will be displayed
         -- See below for more information
-        repl_open_cmd = require('iron.view').right(80),
+        repl_open_cmd = view.split.vertical.botright(80),
     },
     -- Iron doesn't set keymaps by default anymore.
     -- You can set them here or manually add keymaps to the functions in iron.core
     keymaps = {
-        send_motion = "<leader>is",
-        visual_send = "<leader>is",
-        send_file = "<leader>if",
-        send_line = "<leader>il",
+        send_motion = "<leader>ss",  -- send selected
+        visual_send = "<leader>ss",
+        send_file = "<leader>sf",
         interrupt = "<leader>ii",
         exit = "<leader>iq",
         clear = "<leader>ic",
@@ -35,7 +35,4 @@ iron.setup {
 }
 
 -- iron also has a list of commands, see :h iron-commands for all available commands
-vim.keymap.set('n', '<leader>irs', '<cmd>IronRepl<cr>')
-vim.keymap.set('n', '<leader>irr', '<cmd>IronRestart<cr>')
 vim.keymap.set('n', '<leader>irf', '<cmd>IronFocus<cr>')
-vim.keymap.set('n', '<leader>irh', '<cmd>IronHide<cr>')

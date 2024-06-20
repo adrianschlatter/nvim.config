@@ -4,6 +4,7 @@ lsp.on_attach(function(client, bufnr)
 	-- see :help lsp-zero-keybindings
 	-- to learn the available actions
 	lsp.default_keymaps({buffer = bufnr})
+    -- set keymap for symbol renaming:
     vim.keymap.set('n', '<leader>r', function() vim.lsp.buf.rename() end, opts)
 end)
 
@@ -21,3 +22,8 @@ require("mason-lspconfig").setup({
         require('lsp-zero').default_setup,
     },
 })
+
+-- add a border around :LspInfo window:
+require('lspconfig.ui.windows').default_options = {
+  border = "single",
+}

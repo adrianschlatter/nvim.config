@@ -25,8 +25,9 @@ iron.setup {
     -- You can set them here or manually add keymaps to the functions in iron.core
     keymaps = {
         send_motion = "<leader>ss",  -- send selected
-        visual_send = "<leader>ss",
+        visual_send = "<leader>ss",  -- send selected
         send_file = "<leader>sf",
+        send_line = "<leader>sl",
         interrupt = "<leader>ii",
         exit = "<leader>iq",
         clear = "<leader>ic",

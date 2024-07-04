@@ -1,5 +1,17 @@
 local lsp = require('lsp-zero')
 
+-- fix undefined global 'vim' error:
+-- (thanks to the Primeagen)
+lsp.configure('lua_ls', {
+    settings = {
+        Lua = {
+            diagnostics = {
+                globals = { 'vim' },
+            },
+        },
+    },
+})
+
 lsp.on_attach(function(client, bufnr)
 	-- see :help lsp-zero-keybindings
 	-- to learn the available actions

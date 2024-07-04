@@ -13,6 +13,8 @@ lsp.configure('lua_ls', {
 })
 
 lsp.on_attach(function(client, bufnr)
+    local opts = {buffer = bufnr, remap = false}
+
 	-- see :help lsp-zero-keybindings
 	-- to learn the available actions
 	lsp.default_keymaps({buffer = bufnr})
@@ -39,3 +41,5 @@ require("mason-lspconfig").setup({
 require('lspconfig.ui.windows').default_options = {
   border = "single",
 }
+
+lsp.setup()

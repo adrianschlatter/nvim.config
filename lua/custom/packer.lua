@@ -75,4 +75,8 @@ return require('packer').startup(function(use)
     }
     -- iron.nvim repl:
     use {'Vigemus/iron.nvim'}
+    -- sql support:
+    use {'tpope/vim-dadbod'}
+    use {'kristijanhusak/vim-dadbod-ui'}
+    use {'kristijanhusak/vim-dadbod-completion'}
 end)

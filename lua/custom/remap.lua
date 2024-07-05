@@ -41,3 +41,10 @@ vim.keymap.set('t', '<C-[>', '<C-\\><C-n>')
 
 -- oil.nvim:
 vim.keymap.set('n', '-', '<cmd>Oil<CR>', { desc = 'open parent directory' })
+--
+-- luasnip:
+local ls = require("luasnip")
+vim.keymap.set({"i"}, "<C-k>", function() ls.expand() end, {silent = true})
+
+vim.keymap.set('n', '<leader>ls',
+               '<cmd>source ~/.config/nvim/after/plugin/luasnip.lua<CR>')

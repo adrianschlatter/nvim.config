@@ -58,7 +58,10 @@ return require('packer').startup(function(use)
 	}
 	use {
 		'rcarriga/nvim-dap-ui',
-		requires = {'mfussenegger/nvim-dap'}
+		requires = {
+            {'mfussenegger/nvim-dap'},
+            {'nvim-neotest/nvim-nio'},
+        }
 	}
     -- test runner:
     use { 'vim-test/vim-test' }
@@ -79,4 +82,13 @@ return require('packer').startup(function(use)
     use {'tpope/vim-dadbod'}
     use {'kristijanhusak/vim-dadbod-ui'}
     use {'kristijanhusak/vim-dadbod-completion'}
+    -- oil.nvim file browser:
+    use {
+        'stevearc/oil.nvim',
+        config = function()
+            require('oil').setup({
+                default_file_explorer = true,
+            })
+        end,
+    }
 end)

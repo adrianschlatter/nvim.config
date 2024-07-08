@@ -36,5 +36,8 @@ vim.keymap.set('v', '<', '<gv')
 vim.keymap.set('n', '<C-n>', '<cmd>cnext<CR>zz')
 vim.keymap.set('n', '<C-p>', '<cmd>cprev<CR>zz')
 
--- exit inert mode when in terminal mode:
+-- exit insert mode when in terminal mode:
 vim.keymap.set('t', '<C-[>', '<C-\\><C-n>')
+
+-- oil.nvim:
+vim.keymap.set('n', '-', '<cmd>Oil<CR>', { desc = 'open parent directory' })

@@ -58,6 +58,14 @@ ls.add_snippets('all', {
         ]],
         {})
     ),
+    -- umlauts:
+    s({trig = "''a", snippetType = 'autosnippet', wordTrig = false}, {t('ä')}),
+    s({trig = "''A", snippetType = 'autosnippet', wordTrig = false}, {t('Ä')}),
+    s({trig = "''o", snippetType = 'autosnippet', wordTrig = false}, {t('ö')}),
+    s({trig = "''O", snippetType = 'autosnippet', wordTrig = false}, {t('Ö')}),
+    s({trig = "''u", snippetType = 'autosnippet', wordTrig = false}, {t('ü')}),
+    s({trig = "''U", snippetType = 'autosnippet', wordTrig = false}, {t('Ü')}),
+    s({trig = "$o", snippetType = 'snippet', wordTrig = false}, {t('ø')}),
 })
 
 ls.add_snippets('python', {

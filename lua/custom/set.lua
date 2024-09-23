@@ -18,7 +18,7 @@ vim.opt.wrap = false
 -- don't create backups but use persistent undotree:
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = os.getenv('HOME') .. '/.vim/undodir'
+vim.opt.undodir = vim.fn.stdpath('data') .. '/undodir'
 vim.opt.undofile = true
 
 -- don't keep search highlighted but do incremental search:
